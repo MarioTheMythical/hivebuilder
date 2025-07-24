@@ -7,5 +7,10 @@ export default defineConfig({
     alias: {
       '@': '/src'
     }
+  },
+  build: {
+    rollupOptions: {
+      external: ['lucide-react', 'sonner']
+    }
   }
 });
